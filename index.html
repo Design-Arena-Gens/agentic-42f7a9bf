@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>15?Minute EMOM Dumbbell Workout</title>
+  <meta name="description" content="Simple, boring, full?body 15?minute EMOM workout with a pair of 5 kg dumbbells. Muscle growth, strength, and aesthetics focused." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>15?Minute EMOM Dumbbell Workout</h1>
+    <p class="subtitle">Two 5 kg dumbbells. No fluff. Full?body. Hypertrophy + strength + aesthetics.</p>
+  </header>
+
+  <main class="container grid">
+    <section class="card">
+      <h2>How it works</h2>
+      <ol class="tight">
+        <li>EMOM = Every Minute On the Minute. Do the set, rest with remaining time.</li>
+        <li>5 exercises. Repeat for 3 rounds = 15 minutes.</li>
+        <li>Use controlled tempo: 3?0?1 on lower?body hinges/squats, slight pause at stretch.</li>
+      </ol>
+      <div class="note">
+        If sets are too easy, add reps (within range), slow the eccentric, add a 1?2s pause, or switch to unilateral versions.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Your 5?Move Circuit</h2>
+      <div id="exercise-list" class="exercise-list"></div>
+      <details class="mt">
+        <summary>Form & cues</summary>
+        <ul class="tight">
+          <li><strong>Goblet Squat</strong>: Ribs down, knees track over toes, full depth you own.</li>
+          <li><strong>Bent?Over Row</strong>: Hinge, flat back, pull elbows to hip; own the lower.</li>
+          <li><strong>Floor Press</strong>: Wrists stacked over elbows, controlled touch to floor.</li>
+          <li><strong>RDL</strong>: Soft knees, hinge from hips, feel hamstrings; 3s down.</li>
+          <li><strong>Overhead Press</strong>: Glutes tight, ribs down, press straight up.</li>
+        </ul>
+      </details>
+    </section>
+
+    <section class="card span-2">
+      <h2>15?Minute EMOM Timer</h2>
+      <div class="timer">
+        <div class="time" id="time-display">15:00</div>
+        <div class="phase" id="phase-display">Ready</div>
+        <div class="current" id="current-exercise">?</div>
+      </div>
+      <div class="controls">
+        <button id="start-btn" class="btn primary">Start</button>
+        <button id="pause-btn" class="btn" disabled>Pause</button>
+        <button id="reset-btn" class="btn" disabled>Reset</button>
+        <label class="switch">
+          <input type="checkbox" id="sound-toggle" checked />
+          <span>Sound</span>
+        </label>
+      </div>
+      <div class="progress" id="progress"></div>
+    </section>
+
+    <section class="card">
+      <h2>Settings</h2>
+      <p>Adjust target reps. Save is automatic.</p>
+      <form id="settings-form" class="settings"></form>
+      <div class="small note">Progression: If you finish with ?15s rest for two rounds, next time add +2 reps (lower?body/rows), +1 rep (press), or slow tempo/1?2s pauses. If you miss days, just resume ? no penalties.</div>
+    </section>
+
+    <section class="card">
+      <h2>Warm?up (2 minutes)</h2>
+      <ul class="tight">
+        <li>30s: March in place + arm circles</li>
+        <li>30s: Hip hinges with reach</li>
+        <li>30s: Squat to reach</li>
+        <li>30s: Plank shoulder taps (slow)</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <div>Built for consistency: simple, repeatable, effective.</div>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
